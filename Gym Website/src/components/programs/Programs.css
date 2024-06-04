@@ -1,0 +1,81 @@
+.programs-categories {
+    display: flex;
+    margin: 2rem;
+}
+.category{
+    width: 25%;
+    background: var(--gray);
+    margin: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.category:hover{
+    background: var(--planCard);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s transform;
+}
+.join-btn{
+    font-size: 15px;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+}
+.category>:nth-child(1) {
+    fill: white;
+    width: 2rem;
+    height: 2rem;
+}
+.category>:nth-child(2) {
+    font-weight: bold;
+    font-size: 1rem;
+}
+.category>:nth-child(3) {
+    font-size: .9rem;
+    line-height: 20px;
+}
+.category>:nth-child(4)> span{
+    cursor: pointer;
+    font-size: 25px;
+}
+.category>:nth-child(4)>img{
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    animation: toRight 2s ease-in-out alternate infinite;
+}
+@keyframes toRight {    
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(50%);    
+    }
+}
+@media screen and (max-width: 768px){
+    .program{
+        width: 21.5rem;
+    }
+.program-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+}
+.program-header span{
+    font-size: x-large;   
+}
+.programs-categories{
+    flex-direction: column;
+}
+.category{
+    width: 70%;
+}
+}

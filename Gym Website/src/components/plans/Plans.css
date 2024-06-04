@@ -1,0 +1,105 @@
+.plan-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    background: linear-gradient(to right,#333 10.5%,  #ffa739,#333, #ffa739, #333);
+    position: relative;
+    padding-bottom: 3rem;
+}
+.plan-content> div> span{
+font-size: 3.5rem;
+font-style: italic;
+text-transform: uppercase;
+font-weight: bold;
+}
+.plan-content>.plans-categories{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.plan-content>.plans-categories> div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.plans-categories>:nth-child(1), .plans-categories>:nth-child(3){
+    background: #222;
+    padding: 1.5rem;
+
+}
+.plans-categories>:nth-child(2){
+    background: var(--planCard);
+    padding: 2rem;
+    transform: scale(1.1);
+    
+}
+.feature{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.cate>:nth-child(1){
+    fill: var(--orange);
+    transform: scale(1.5);
+}
+.cate>:nth-child(2){
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.cate>:nth-child(3){
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.cate .feature>img{
+width: 1rem;
+height: 1rem;
+}
+.btnn{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.btnn>img{
+    width: .7rem;
+    height: .7rem;
+}
+.cate>button{
+    background: white;
+    color: black;
+    border-radius: 0;
+    font-size: 1.1rem;
+}
+.cate>button:hover{
+    color: var(--orange);
+    background: black;
+    border-color: black;
+    transform: scale(1.1);
+    transition: 1s transform;
+}
+.plans-categories>:nth-child(2)>svg{
+    fill: white;
+}
+.plans-categories>:nth-child(2)>button{
+    color: var(--orange);
+}
+@media screen and (max-width: 768px){
+    .plan-content{
+        width: 26rem;
+        text-align: center;
+        margin-left: -1.8rem;
+    }
+    .plan-content> div:nth-child(1){
+        width: 25rem;
+    }
+    .plan-content> div > span{
+        font-size: xxx-large;
+    }
+    .plans-categories{
+        flex-direction: column;
+    }
+}
+
